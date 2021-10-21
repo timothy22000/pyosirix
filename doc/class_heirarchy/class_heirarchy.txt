@@ -1,0 +1,157 @@
+@startuml
+
+ViewerController <|-- DCMPix
+ViewerController <|-- ROI
+ViewerController <|-- VRController
+ROI <|-- DCMPix
+BrowserController <|-- DicomSeries
+BrowserController <|-- DicomStudy
+DicomSeries <|-- DicomImage
+DicomStudy <|-- DicomSeries
+DicomStudy <|-- DicomImage
+
+class ViewerController {
+  {field} +idx: int
+  {field} #modality: str
+  {field} +movie_idx: int
+  {field} #title: str
+  {field} +wlww: tuple
+  {method} blending_controller() -> ViewerController
+  {method} close_viewer()
+  {method} copy_viewer_window(in_4d: bool = False) -> ViewerController
+  {method} cur_dcm() -> DCMPix
+  {method} end_wait_window(window: Wait)
+  {method} is_data_volumic(in_4d: bool = False) -> bool
+  {method} max_movie_index() -> int
+  {method} needs_display_update()
+  {method} pix_list(movie_idx: int) -> tuple
+  {method} resample_viewer_controller(vc: ViewerController) -> ViewerController
+  {method} roi_list(movie_idx: int) -> tuple
+  {method} rois_wih_name(name: str, movie_idx: int, in_4d: bool = False) -> tuple
+  {method} selected_rois() -> tuple
+  {method} set_roi(roi: ROI, position: int, movie_idx: int)
+  {method} start_wait_progress_window(message: str, max: int) -> Wait
+  {method} vr_controllers() -> tuple
+} 
+
+class VRController{
+  {field} +rendering_mode: str
+  {field} #style: str
+  {field} #title: str
+  {field} +wlww: tuple
+  {method} blending_controller() -> ViewerController
+  {method} viewer_2d() -> ViewerController
+} 
+
+class DCMPix {
+  {field} +image: ndarray
+  {field} #is_rgb: bool
+  {field} #location: float
+  {field} #orientation: tuple
+  {field} #origin: tuple
+  {field} #pixel_spacing: tuple
+  {field} #shape: tuple
+  {field} #source_file: str
+  {method} compute_roi(roi: ROI) -> dict
+  {method} convert_to_bw()
+  {method} convert_to_rgb(type: int)
+  {method} get_map_from_roi(roi: ROI) -> ndarray
+  {method} get_roi_values(roi: ROI) -> tuple
+  {method} image_obj() -> DicomImage
+  {method} series_obj() -> DicomSeries
+  {method} study_obj() -> DicomStudy
+}
+
+class ROI {
+  {field} +color: tuple
+  {field} +name: str
+  {field} +opacity: float
+  {field} #pix: DCMPix
+  {field} +points: ndarray
+  {field} +thickness: float
+  {field} #type: str
+  {method} centroid() -> tuple
+  {method} flip_horizontally()
+  {method} flip_vertically()
+  {method} roi_area() -> float
+  {method} roi_move(columns: float, rows: float)
+  {method} rotate(theta: float, center: tuple)
+}
+
+class BrowserController {
+  {method} copy_files_into_database(files: list)
+  {method} database_selection() -> tuple
+}
+
+class DicomImage {
+  {field} #date: datetime
+  {field} #instance_number: int
+  {field} #modality: str
+  {field} #number_of_frames: int
+  {field} #series: DicomSeries
+  {field} #slice_location: float
+  {method} complete_path() -> str
+  {method} height() -> int
+  {method} sop_instance_uid() -> str
+  {method} width() -> int
+} 
+
+class DicomSeries{
+  {field} #date: datetime
+  {field} #images: tuple
+  {field} #modality: str
+  {field} #name: str
+  {field} #number_of_images: int
+  {field} #series_description: str
+  {field} #series_instance_uid: str
+  {field} #sop_class_uid: str
+  {field} #study: DicomStudy
+  {method} next_series() -> DicomSeries
+  {method} paths() -> tuple
+  {method} previous_series() -> DicomSeries
+  {method} sorted_images() -> tuple
+} 
+
+class DicomStudy{
+  {field} #date: datetime
+  {field} #date_added: datetime
+  {field} #date_of_birth: datetime
+  {field} #institution_name: str
+  {field} #modliaty: str
+  {field} #name: str
+  {field} #number_of_images: int
+  {field} #patient_id: str
+  {field} #patient_sex: str
+  {field} #patient_uid: str
+  {field} #performing_physician: str
+  {field} #referring_physician: str
+  {field} #series: tuple
+  {field} #study_instance_uid: str
+  {field} #study_name: str
+  {method} image_series() -> tuple
+  {method} images() -> tuple
+  {method} modalities() -> str
+  {method} no_files() -> int
+  {method} no_files_excluding_multiframes() -> int
+  {method} paths() -> tuple
+  {method} raw_no_files() -> int
+}
+
+class Wait{
+  {field} #value: float
+  {field} #max_value: float
+  {method} increment_by(value: float)
+}
+
+class osirix{
+  {method} current_browser() -> BrowserController
+  {method} frontmost_vr_controller() -> VRController
+  {method} frontmost_viewer() -> ViewerController
+  {method} get_displayed_2d_viewers() -> tuple
+  {method} get_displayed_vr_controllers() -> tuple
+  {method} run_alert_panel(message: str, informative_text: str = None, first_button: str = "OK", second_button: str = None, third_button: str = None) -> str
+  {method} select_path(dirs: bool = False, extension: str = None, title: str = None) -> str
+} 
+
+@enduml
+
