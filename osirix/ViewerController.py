@@ -4,17 +4,14 @@ import sys
 
 from numpy import ndarray
 
-sys.path.append("../../src/python")
+# sys.path.append("./pb2")
+sys.path.append("/Users/admintmun/dev/pyosirix/osirix/pb2")
 import viewercontroller_pb2
 import vrcontroller_pb2
 import dcmpix_pb2
 import roi_pb2
-# import src.python.viewercontroller_pb2
-# import src.python.vrcontroller_pb2
-# import src.python.dcmpix_pb2
-# import src.python.roi_pb2
-from pyosirix.osirix.Dicom import DicomSeries, DicomStudy, DicomImage
-from pyosirix.osirix.ResponseProcessor import ResponseProcessor
+from Dicom import DicomSeries, DicomStudy, DicomImage
+from ResponseProcessor import ResponseProcessor
 
 class DCMPix(object):
     '''

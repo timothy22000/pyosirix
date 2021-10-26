@@ -2,10 +2,10 @@ from __future__ import annotations
 
 import datetime
 import sys
-sys.path.append("../../src/python")
+# sys.path.append("./pb2")
 import osirix_pb2_grpc
 from typing import Tuple
-from pyosirix.osirix.ResponseProcessor import ResponseProcessor
+from ResponseProcessor import ResponseProcessor
 
 class DicomStudy(object):
     '''

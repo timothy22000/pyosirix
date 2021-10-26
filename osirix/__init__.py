@@ -1,8 +1,20 @@
-from pyosirix.osirix.osirix import Osirix, OsirixService
-from pyosirix.osirix.ViewerController import ViewerController, DCMPix, ROI, VRController
-from pyosirix.osirix.BrowserController import BrowserController
-from pyosirix.osirix.Dicom import DicomSeries, DicomStudy, DicomImage
-from pyosirix.osirix.Wait import Wait
+import sys
+sys.path.append("/Users/admintmun/dev/pyosirix/osirix")
+from osirix_service import Osirix, OsirixService
+from ViewerController import ViewerController, DCMPix, ROI, VRController
+from BrowserController import BrowserController
+from Dicom import DicomSeries, DicomStudy, DicomImage
+from Wait import Wait
 
-__all__ = ["Osirix", "OsirixService", "ViewerController", "DCMPix", "ROI", "VRController",
-               "BrowserController", "DicomSeries", "DicomStudy", "DicomImage", "Wait"]
+__all__ = [
+            "Osirix",
+           "OsirixService",
+           "ViewerController",
+           "DCMPix",
+           "ROI",
+           "VRController",
+            "BrowserController",
+           "DicomSeries",
+           "DicomStudy",
+           "DicomImage",
+           "Wait"]

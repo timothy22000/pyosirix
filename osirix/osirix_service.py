@@ -3,14 +3,15 @@ from typing import List, Tuple
 
 import grpc
 import sys
-from osirix.Exceptions import GrpcException
-from osirix.ViewerController import ViewerController, VRController
-from osirix.BrowserController import BrowserController
-from osirix.ResponseProcessor import ResponseProcessor
+from Exceptions import GrpcException
+from ViewerController import ViewerController, VRController
+from BrowserController import BrowserController
+from ResponseProcessor import ResponseProcessor
 
-# sys.path.append("../../src/python")
-import pb2.osirix_pb2_grpc
-import pb2.utilities_pb2
+sys.path.append("./pb2/")
+
+import osirix_pb2_grpc
+import utilities_pb2
 
 class OsirixService(object):
     """
@@ -167,9 +168,11 @@ if __name__ == '__main__':
     osirix_service = OsirixService(channel_opt=channel_opt, domain=domain, port=port).get_service()
     pyosirix = Osirix(osirix_service)
     browser_controller = pyosirix.current_browser()
-    vr_controller = pyosirix.frontmost_vr_controller()
+    # vr_controller = pyosirix.frontmost_vr_controller()
     viewer_controller = pyosirix.frontmost_viewer()
     print(viewer_controller.modality)
+    print(viewer_controller.cur_dcm().source_file)
+
 
 
 

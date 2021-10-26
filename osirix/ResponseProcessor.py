@@ -5,9 +5,9 @@ import sys
 import numpy as np
 from numpy import ndarray
 
-from pyosirix.osirix.Exceptions import GrpcException
+from Exceptions import GrpcException
 
-sys.path.append("../../src/python")
+# sys.path.append("../../src/python")
 import osirix_pb2
 import dicomstudy_pb2
 
