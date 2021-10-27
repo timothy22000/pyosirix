@@ -45,8 +45,8 @@ Using it from github for development purposes:
 
 git clone git@github.com:osirixgrpc/pyosirix.git
 cd pyosirix
+pip install -r requirements.txt
 # Create your own scripts with main function to test the functionality, note that you need to start an OsirixService first and have Horos/Osirix open.
-
 # See unit tests for examples
 
 ```

@@ -66,9 +66,9 @@ Ready to contribute? Here's how to set up `pyosirix` for local development.
 
 3. Install your local copy into a virtualenv using whichever method you prefer (pyenv/conda etc). Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv pyosirix
+    $ pyenv virtualenv [python-version] pyosirix
     $ cd pyosirix/
-    $ python setup.py develop
+    $ pip install -r requirements.txt
 
 4. Create a branch for local development::
 
