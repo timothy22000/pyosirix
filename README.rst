@@ -94,8 +94,8 @@ Credits
 =======
 
 -  Timothy Sum Hon Mun
-   timothy22000@gmail.com/timothy.sumhonmun@icr.ac.uk
+   timothy22000@gmail.com / timothy.sumhonmun@icr.ac.uk
 -  Matthew Blackledge
-   mattyblackledge@gmail.com/matthew.blackledge@icr.ac.uk
+   mattyblackledge@gmail.com / matthew.blackledge@icr.ac.uk
 
 
