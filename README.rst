@@ -1,10 +1,10 @@
 pyOsirix
 =================
 
-.. |image| image:: https://img.shields.io/pypi/v/src.svg
-   :target: https://test.pypi.org/project/test-cookiecutter100/
-.. |Updates| image:: https://pyup.io/repos/github/timothy22000/pyosirix/python-3-shield.svg
-   :target: https://pyup.io/account/repos/github/timothy22000/pyosirix/
+.. |image| image:: https://img.shields.io/pypi/v/pyosirix.svg
+   :target: https://pypi.org/project/pyosirix/
+.. |Updates| image:: https://pyup.io/repos/github/timothy22000/test_cookiecutter/python-3-shield.svg
+   :target: https://pyup.io/account/repos/github/timothy22000/test_cookiecutter/
 
 
 **Table of contents**

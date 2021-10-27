@@ -2,12 +2,12 @@
 pyOsirix
 ---
 
-[![image](https://img.shields.io/pypi/v/src.svg)](https://pypi.org/project/pyosirix/)
+[![image](https://img.shields.io/pypi/v/pyosirix.svg)](https://pypi.org/project/pyosirix/)
 
 [comment]: <> ([![image]&#40;https://img.shields.io/travis/timothy22000/pyosirix.svg&#41;]&#40;https://app.travis-ci.com/github/timothy22000/pyosirix&#41;)
 
 [comment]: <> ([![Updates]&#40;https://pyup.io/repos/github/osirixgrpc/pyosirix/python-3-shield.svg&#41;]&#40;https://pyup.io/account/repos/github/osirixgrpc/pyosirix/&#41;)
-[![Updates](https://pyup.io/repos/github/osirixgrpc/pyosirix/python-3-shield.svg)](https://pyup.io/account/repos/github/timothy22000/test_cookiecutter/) 
+[![Updates](https://pyup.io/repos/github/timothy22000/test_cookiecutter/python-3-shield.svg)](https://pyup.io/account/repos/github/timothy22000/test_cookiecutter/) 
 
 
 **Table of contents**
@@ -79,5 +79,5 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Credits
 
-* Timothy Sum Hon Mun <timothy22000@gmail.com/timothy.sumhonmun@icr.ac.uk>
-* Matthew Blackledge <mattyblackledge@gmail.com/matthew.blackledge@icr.ac.uk>
+* Timothy Sum Hon Mun <timothy22000@gmail.com/ timothy.sumhonmun@icr.ac.uk>
+* Matthew Blackledge <mattyblackledge@gmail.com/ matthew.blackledge@icr.ac.uk>
