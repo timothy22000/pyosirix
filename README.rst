@@ -1,4 +1,3 @@
-=================
 pyOsirix
 =================
 
@@ -15,7 +14,7 @@ pyOsirix
 -  `Development <#development>`__
 -  `Bug/Feature Request <#feature-request>`__
 -  `To-do <#todo>`__
--  `Creidts <#credits>`__
+-  `Credits <#credits>`__
 
 PyOsirix and gRPC
 =================
@@ -44,8 +43,9 @@ Using pip:
 
    pip install pyosirix
 
-.. code:: bash
+Using it from github for development purposes:
 
+::
 
    git clone git@github.com:osirixgrpc/pyosirix.git
    cd pyosirix
@@ -86,7 +86,7 @@ an issue `here <https://github.com/osirixgrpc/pyosirix/issues/new>`__.
 Please include sample queries and their corresponding results.
 
 To-do
------
+=======
 
 -  Placeholder
 

@@ -2,11 +2,12 @@
 pyOsirix
 ---
 
-[![image](https://img.shields.io/pypi/v/src.svg)](https://test.pypi.org/project/test-cookiecutter100/)
+[![image](https://img.shields.io/pypi/v/src.svg)](https://pypi.org/project/pyosirix/)
 
 [comment]: <> ([![image]&#40;https://img.shields.io/travis/timothy22000/pyosirix.svg&#41;]&#40;https://app.travis-ci.com/github/timothy22000/pyosirix&#41;)
 
-[![Updates](https://pyup.io/repos/github/osirixgrpc/pyosirix/python-3-shield.svg)](https://pyup.io/account/repos/github/osirixgrpc/pyosirix/)
+[comment]: <> ([![Updates]&#40;https://pyup.io/repos/github/osirixgrpc/pyosirix/python-3-shield.svg&#41;]&#40;https://pyup.io/account/repos/github/osirixgrpc/pyosirix/&#41;)
+[![Updates](https://pyup.io/repos/github/osirixgrpc/pyosirix/python-3-shield.svg)](https://pyup.io/account/repos/github/timothy22000/test_cookiecutter/) 
 
 
 **Table of contents**
@@ -16,7 +17,7 @@ pyOsirix
 * [Development](#development)
 * [Bug/Feature Request](#feature-request)
 * [To-do](#todo)
-* [Creidts](#credits) 
+* [Credits](#credits) 
 
 
 ## PyOsirix and gRPC

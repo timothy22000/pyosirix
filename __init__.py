@@ -1,1 +1,1 @@
-from osirix import *
+from .osirix import *

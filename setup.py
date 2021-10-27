@@ -43,7 +43,7 @@ setup(
     # For future if we want to enable pysosirix to work with CLI
     # entry_points={
     #     'console_scripts': [
-    #         'src=src.cli:main',
+    #         'osirix=osirix.cli:main',
     #     ],
     # },
     install_requires=read("requirements.txt"),
@@ -57,6 +57,6 @@ setup(
     test_suite='tests',
     tests_require=read("requirements.txt"),
     url='https://github.com/osirixgrpc/pyosirix',
-    version='0.1.1',
+    version='0.1.2',
     zip_safe=False,
 )
