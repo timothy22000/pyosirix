@@ -40,6 +40,7 @@ Using pip:
 pip install pyosirix
 ```
 
+Using it from github for development purposes:
 ```bash
 
 git clone git@github.com:osirixgrpc/pyosirix.git
@@ -49,11 +50,11 @@ cd pyosirix
 # See unit tests for examples
 
 ```
-# Features
+## Features
 
 -   TODO
 
-### Development
+## Development
 Want to contribute? Great!
 
 To fix a bug or enhance an existing module, follow these steps:
@@ -66,7 +67,7 @@ To fix a bug or enhance an existing module, follow these steps:
 - Push to the branch (`git push origin improve-feature`)
 - Create a Pull Request
 
-### Bug / Feature Request
+## Bug / Feature Request
 
 If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/osirixgrpc/pyosirix/issues) by including your search query and the expected result.
 
@@ -75,7 +76,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ## To-do
 - Placeholder
 
-# Credits
+## Credits
 
 * Timothy Sum Hon Mun <timothy22000@gmail.com/timothy.sumhonmun@icr.ac.uk>
 * Matthew Blackledge <mattyblackledge@gmail.com/matthew.blackledge@icr.ac.uk>
