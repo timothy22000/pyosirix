@@ -1,12 +1,12 @@
 import sys
 # sys.path.append("./pb2")
 
-sys.path.append("/Users/admintmun/dev/pyosirix/osirix/pb2")
-import browsercontroller_pb2
-from Exceptions import GrpcException
+# sys.path.append("/Users/admintmun/dev/pyosirix/osirix/pb2")
+import osirix.pb2.browsercontroller_pb2 as browsercontroller_pb2
+from osirix.Exceptions import GrpcException
 from typing import Tuple, List
-from Dicom import DicomSeries, DicomStudy
-from ResponseProcessor import ResponseProcessor
+from osirix.Dicom import DicomSeries, DicomStudy
+from osirix.ResponseProcessor import ResponseProcessor
 
 class BrowserController(object):
     """

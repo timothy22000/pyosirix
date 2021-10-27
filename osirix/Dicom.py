@@ -3,9 +3,9 @@ from __future__ import annotations
 import datetime
 import sys
 # sys.path.append("./pb2")
-import osirix_pb2_grpc
+import osirix.pb2.osirix_pb2_grpc as osirix_pb2_grpc
 from typing import Tuple
-from ResponseProcessor import ResponseProcessor
+from osirix.ResponseProcessor import ResponseProcessor
 
 class DicomStudy(object):
     '''

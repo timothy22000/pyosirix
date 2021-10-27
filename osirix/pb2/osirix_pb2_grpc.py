@@ -2,18 +2,18 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import browsercontroller_pb2 as browsercontroller__pb2
-import dcmpix_pb2 as dcmpix__pb2
-import dicomimage_pb2 as dicomimage__pb2
-import dicomseries_pb2 as dicomseries__pb2
-import dicomstudy_pb2 as dicomstudy__pb2
-import osirix_pb2 as osirix__pb2
-import roi_pb2 as roi__pb2
-import roivolume_pb2 as roivolume__pb2
-import types_pb2 as types__pb2
-import utilities_pb2 as utilities__pb2
-import viewercontroller_pb2 as viewercontroller__pb2
-import vrcontroller_pb2 as vrcontroller__pb2
+import osirix.pb2.browsercontroller_pb2 as browsercontroller__pb2
+import osirix.pb2.dcmpix_pb2 as dcmpix__pb2
+import osirix.pb2.dicomimage_pb2 as dicomimage__pb2
+import osirix.pb2.dicomseries_pb2 as dicomseries__pb2
+import osirix.pb2.dicomstudy_pb2 as dicomstudy__pb2
+import osirix.pb2.osirix_pb2 as osirix__pb2
+import osirix.pb2.roi_pb2 as roi__pb2
+import osirix.pb2.roivolume_pb2 as roivolume__pb2
+import osirix.pb2.types_pb2 as types__pb2
+import osirix.pb2.utilities_pb2 as utilities__pb2
+import osirix.pb2.viewercontroller_pb2 as viewercontroller__pb2
+import osirix.pb2.vrcontroller_pb2 as vrcontroller__pb2
 
 class OsiriXServiceStub(object):
     """Missing associated documentation comment in .proto file."""

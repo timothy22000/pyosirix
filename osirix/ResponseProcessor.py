@@ -5,11 +5,11 @@ import sys
 import numpy as np
 from numpy import ndarray
 
-from Exceptions import GrpcException
+from osirix.Exceptions import GrpcException
 
 # sys.path.append("../../src/python")
-import osirix_pb2
-import dicomstudy_pb2
+import osirix.pb2.osirix_pb2 as osirix_pb2
+import osirix.pb2.dicomstudy_pb2 as dicomstudy_pb2
 
 #TODO break the responseprocessor into smaller parts
 class ResponseProcessor(object):

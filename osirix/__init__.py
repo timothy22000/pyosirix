@@ -1,10 +1,10 @@
 import sys
-sys.path.append("/Users/admintmun/dev/pyosirix/osirix")
-from osirix_service import Osirix, OsirixService
-from ViewerController import ViewerController, DCMPix, ROI, VRController
-from BrowserController import BrowserController
-from Dicom import DicomSeries, DicomStudy, DicomImage
-from Wait import Wait
+from .Exceptions import GrpcException, WaitException, OsirixServiceException
+from .Wait import Wait
+from .ViewerController import ViewerController, DCMPix, ROI, VRController
+from .Dicom import DicomSeries, DicomStudy, DicomImage
+from .BrowserController import BrowserController
+from .osirix_utils import Osirix, OsirixService
 
 __all__ = [
             "Osirix",
@@ -17,4 +17,7 @@ __all__ = [
            "DicomSeries",
            "DicomStudy",
            "DicomImage",
-           "Wait"]
+           "Wait",
+            "GrpcException",
+            "WaitException",
+            "OsirixServiceException"]
